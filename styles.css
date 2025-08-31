@@ -1,0 +1,169 @@
+/* General Styles */
+
+/* Resetting default margin and padding */
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Background image settings */
+  background: url(image1.jpg) no-repeat center fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Container for the main content */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+}
+
+/* Styling for note and to-do sections */
+.note-section,
+.todo-section {
+  background: transparent;
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 10px #212147; /* Shadow effect */
+}
+
+/* Container for buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for text areas */
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Margin between list items */
+li {
+  margin-bottom: 8px;
+}
+
+/* Note list settings */
+#note-list {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+/* Toggle (Switch) Styles */
+
+/* Styles for toggle container */
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Styles for the switch itself */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hiding the input checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Styling for the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f5;
+  transition: .4s; /* Smooth transition effect */
+  border-radius: 34px;
+}
+
+/* Styling for the slider button */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(175, 92, 143);
+  transition: .4s; /* Smooth transition effect */
+  border-radius: 50%;
+}
+
+/* Styles for checked state of the slider */
+input:checked + .slider {
+  background-color: #3e34ab;
+}
+
+/* Styles for checked state of the slider button */
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background: white; /* Change color when checked */
+}
+
+/* Dark Mode Styles */
+
+/* Dark mode background and text color */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  /* Additional styles for dark mode */
+  background-image: url('image2.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Center the background image */
+}
+
+/* Credits Section Styles */
+
+/* Styling for credits */
+.credits {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #999; /* Adjust the color as needed */
+  font-size: 12px; /* Adjust the font size */
+}
